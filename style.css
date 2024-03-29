@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Merriweather", serif;
+    
+}
+body {
+  overflow-x: hidden;
+}
+/* Navbar styles */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.custom-border {
+  border: 2px solid #eeecec; 
+  height: 60px;
+  width: 100%;
+  
+}
+.vertical-line {
+  border-left: 1px solid #d6d5d5; 
+ 
+ }
+ .vertical-lines {
+  border-left: 2px solid #d6d5d5;
+  margin-left: 5.8rem;
+  display: inline-flex;
+ }
+
+.container {
+  max-width: 1000px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+/* Search bar styles */
+.search {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; 
+  position: relative;
+  bottom: 5px;
+}
+
+.search__input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #333333;
+  background-color: #f4f2f2;
+  padding: 14px 72px 14px 42px;
+  border-radius: 1000px;
+  border: 1px solid #7C7C7C;
+  text-decoration: none;
+  width: 100%; 
+  transition: all 0.2s;
+  height: 2.6em;
+  max-width: 300px; 
+}
+.search__input:focus {
+  outline: none;
+  
+  background-color: #f0eeee;
+}
+.search__input::-webkit-input-placeholder {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.search__button {
+  border: none;
+  background-color: transparent;
+  z-index: 999;
+  cursor: pointer;
+
+}
+
+.search__button:focus {
+  outline: none;
+}
+
+.search__button:active {
+  transform: translateY(2px);
+}
+
+.search__icon {
+  height: 20px;
+  width: 20px;
+  fill: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 37px;
+}
+
+
+
+
+.picture__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.picture__button:focus {
+  outline: none;
+}
+
+.picture__button:active {
+  transform: translateY(2px);
+}
+
+.picture__icon {
+  height: 16px;
+  width: 20px;
+  fill: #999999;
+  position: relative;
+  left: -40px;
+  bottom: 3.7px;
+}
+
+.carousel-container {
+    margin-top: 10px; /* Adjust this value to match your navbar height */
+    margin-bottom: 50px;
+    max-width: 0; /* Limit the width of the container */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
+}
+
+.carousel {
+    max-width: 100%; /* Allow carousel to expand */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding: 20px; /* Adjust as needed */
+}
+
+.circle-img {
+  width: 4cm; /* Diameter of the circle */
+  height: 4cm;
+  border-radius: 50%; /* Ensure the image is displayed in a circular shape */
+}
+
+.image-row {
+  margin-top: 5cm; /* Adjust the margin between rows */
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+}
+
+.rounded-circle-img-container {
+  text-align: center; /* Center the text */
+  margin:3cm; /* Adjust the margin between the images */
+}
+
+.rounded-circle-img {
+  width: 100%; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Ensure the image is displayed in a circular shape */
+  width: 4cm; /* Limit maximum width */
+  height: 4cm; /* Limit maximum height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  border: 2px solid #ccc; /* Add border to create a bar behind the circles */
+}
+
+/* Add space after the last image */
+.rounded-circle-img-container:last-child {
+  margin-right: 0;
+}
+
+/* Make the words bold */
+.circle-name {
+  font-weight: bold;
+}
+
+
+
+.countdown-timer {
+    display: inline-block;
+}
+.flash-sale-container {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.flash-sale-heading {
+    color: black;
+    font-weight: bold;
+   
+}
+.rating {
+  color: gold; /* Set the color to gold */
+}
+
+.countdown-timer {
+    display: inline-block;
+}
+
+.image-row {
+    justify-content: center; /* Center the items horizontally */
+}
+
+.rounded-circle-img-container {
+    text-align: center; /* Center the content horizontally */
+    margin: 10px; /* Add some space around each item */
+}
+.original-price {
+    color: red; /* Set color to red */
+    text-decoration: line-through; /* Add line-through decoration */
+  }
+  .product-card {
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .custom-container {
+    width: 9cm; /* Adjusted width */
+    height: 5.5cm; /* Adjusted height */
+    border-radius: 20px; /* For curved edges */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    position: relative;
+    background-color: white; /* White background */
+    overflow: hidden; /* To prevent content overflow */
+    padding: 0.5cm; /* Add padding for spacing */
+  }
+
+  /* Define styles for the circle container */
+  .circle-container {
+    width: 1.5cm; /* Adjusted diameter */
+    height: 1.5cm; /* Adjusted diameter */
+    border-radius: 50%; /* To make it a circle */
+    overflow: hidden; /* To hide overflow if the image is larger */
+    position: absolute;
+    top: 0.5cm; /* 1.5cm from the top */
+    left: 0.5cm; /* 0.5cm away from the left */
+  }
+
+  /* Define styles for the title */
+  .title {
+    font-weight: bold;
+    position: absolute;
+    top: 0.5cm; /* 1.5cm from the top */
+    left: 2.5cm; /* 1cm away from the circle container */
+  }
+
+  /* Define styles for the square containers */
+  .square-container {
+    width: 1.5cm; /* Adjusted side */
+    height: 1.5cm; /* Adjusted side */
+    border-radius: 20px; /* For curved edges */
+    overflow: hidden; /* To hide overflow if the image is larger */
+    margin-right: 1cm; /* Margin between square containers */
+    margin-top: 2cm; /* 1.5cm from the top */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+
+  /* Define styles for the price */
+  .price {
+    font-weight: bold;
+    text-align: center; /* Center price text */
+    margin-top: 3cm; /* Margin from the top */
+    position: absolute; /* Position the price absolutely */
+    bottom:0.5cm ; /* Adjusted position below the square container */
+    left: 0; /* Align the price to the left */
+    width: 100%; /* Ensure the price spans the container's width */
+  }
+  .banner {
+    margin-top: 40px;
+    width: 1500px;
+    height: 150px ;
+    text-align: center;
+    margin-bottom: 0;
+}
+.let {
+  margin-left: 780px;
+    margin-top: -90px;
+}
+
+.toall {
+  margin-left: 350px;
+}
+
+
+@media only screen and (max-width: 576px) {
+  /* Adjustments for extra small screens (phones) */
+  
+  /* Navbar */
+  .navbar-brand {
+    margin-right: 0; /* Remove right margin for better alignment */
+  }
+.abc{
+  margin-top: 2500px;
+  margin-left: 20px;
+}
+.flash2{
+  margin-left: 500px;
+}
+.name2{
+  margin-top: 2000px;
+  margin-left: -150px;
+}
+.ro2{
+  margin-top:700px;
+  margin-bottom: 20px;
+}
+.product-card {
+  margin-top: 20px;
+}
+.row3{
+  margin-top: 1600px;
+}
+.name3{
+  margin-top:-1000px ;
+  margin-right:-200px; ;
+}
+.row4{
+  margin-top: 2500px;
+  margin-left: 200px ;
+}
+
+}
